@@ -1,0 +1,14 @@
+Guide for choosing standardized tags. Will be updated in the future
+These tags are listed in the postTemplate.html, but this is when/how to use them
+
+Business - almost all outreach is under this tag too. grants won and companies talked too
+Outreach - giving to the community, The team went out to an event, taught something, mentored a group etc
+Mechanical - physically working on the robot or designs for that (omar's used "build" in the past, similar to that)
+Software - programming, talking about sensors or something
+Design - robot design (inlcuding arrangement of parts and wires), Creo mostly though
+Organization - logistics about arrangement of tools, workspace stuff, wire management (put wires under mechanical too),
+   may overlap with a lot of others
+Journal - for when you've gotta get meta and blog about blogging
+Tips - tips and tricks, something we think should be shared with other teams, complaints about field stuff, solutions to general problems
+Private - posts that contain trade secrets or something we don't want to share. won't be shown on the main blog page, but will be printed for judges
+Video - video is embedded somewhere in the post. not sure how this tag will be used but type it in anyways

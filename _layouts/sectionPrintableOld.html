@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Iron Reign : &quot;Measure nonce, cut twice&quot; ">
+
+    <link rel="stylesheet" type="text/css" media="print" href="stylesheets/stylesheet.css">
+
+    <title>Articles by section: {{ page.section }} </title>
+  </head>
+
+<body>
+
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
+
+<h1> Articles by section: {{ page.section }} </h1>
+
+<ul>
+{% for post in site.posts reversed %}
+   {% capture comparableDate %} {{ post.date | date: "%Y%m%d" }} {% endcapture %}
+	{% assign comparableDate = comparableDate | plus: 0 %}
+	{% if comparableDate >= 20150424 %}
+
+	 {% capture downcaseSection %} {{ post.section | downcase }} {% endcapture %}
+	 {% if downcaseSection contains page.section %} 
+    <article class="post">    
+      
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.content | replace:'../','../../../'}}
+      </div>
+      
+    </article>
+	 {% endif %}
+	{% endif %}
+{% endfor %}
+</ul>
+
+</section>
+</div>
+</body>

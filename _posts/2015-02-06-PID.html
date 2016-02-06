@@ -1,0 +1,43 @@
+---
+layout: post
+title: PID
+tags: [Software]
+---
+
+
+
+<html>
+<head> <title> PID</title></head>
+<body>
+written by Tycho Virani
+</br></br>
+<p>
+<h4> Task: What is PID? </h4>
+<p>
+PID is useful in many ways, such as setting an arm to a certain position, going straight based on a gyro or following a
+line. There are three parts to a PID control program : Proportional, Integral and Derivative.
+</p>
+<p>
+<strong>Proportional</strong>: How much error is there? The proportional part of PID is useful because it tells you how far away you are from
+your target value, so you know how fast you should go to correct it.
+</p>
+<p>
+<strong>Integral</strong>    : What is the total error over time? The integral part of PID is useful in some cricumstances, but is not always
+a good thing to have all the time. One would use integral to tell whether you're stuck on a physichal barrier, so you can try
+to overcome it by increasing the power. A "leaky" integral is one that slowly returns back to zero, so you stop correcting for
+a barrier that might have been overcome already.
+</p>
+<p>
+<strong>Derivative</strong>  : How fast is the error changing? The derivative part of PID help measures how fast your error is going to or
+from your target. One would use derivative to slow down the motors when approaching the target in order to prevent from 
+overshooting.
+</p>
+</p>
+
+Related Articles:
+<ul>
+
+</ul>
+
+</body>
+</html>

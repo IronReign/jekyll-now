@@ -1,0 +1,35 @@
+---
+layout: post
+title: Updated Intake System
+tags: [backboard, scoring, back board, ski lift]
+---
+
+<html>
+<head>
+
+</head>
+<body>
+Written by Jayesh Sharma
+  <img src="../images/clawUp.jpg" align= "right" width="600" /> <!--???????????-->
+<h4> Task: Make a new intake method for the balls</h4>
+Our old beater bar intake for the game was deemed too big for our new scissor lift idea. Our new claw has a simple toggle set in the code:</br>
+<code>
+if (!(joy2Btn(8) == 1))
+		{
+			servoTarget[Claw] = 255;
+		}
+		else {
+			servoTarget[Claw] = 100;
+	}
+	
+</code> </br>
+This allows for a simple hold of right trigger to keep the claw up, This allows for rapid intake(which was discussed in an earlier blog entry).
+ <img src="../images/clawDown.jpg" align= "right" width="600" /> <!--???????????-->
+
+<br />
+<h4> Reflections: </h4>
+Our new designs and code are all coming together, constantly increasing our arsenal for use in the robot game. Our main goal of getting a rapid intake with contantly scoring balls (hopefully in the 90)
+is a lot easier with the new claw. The simple code creation and output also gives a low margin of error.</p>
+
+</body>
+</html>

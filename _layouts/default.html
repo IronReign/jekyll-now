@@ -14,10 +14,13 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/stylesheet.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<script src="../javascripts/oai.js"></script>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
   </head>
 
   <body>
@@ -32,10 +35,28 @@
           </div>
           
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+		 <div class="menu"><ul>
+            		<a href="{{ site.baseurl }}/"><li>Blog</li></a>
+            		<a href="{{ site.baseurl }}/about"><li>About</li></a>
+			<a href="{{ site.baseurl }}/tags/index"><li>Tags</li></a>
+			<a href="{{ site.baseurl }}/sponsors"><li>Sponsorship</li></a>
+			<li><script language="JavaScript">var fhs = document.createElement('script');var fhs_id = "5187280";
+var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
+fhs.src = "http://freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=Online Reader&e2=Online Readers&r="+ref+"&wh="+w_h+"&a=1&pn="+pn+"";
+document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
+</script>
+</li>
+			</ul>
+		 </div>
           </nav>
         </header>
+        	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+		">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
       </div>
     </div>
 

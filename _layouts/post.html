@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
-
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/stylesheet.css">
+<div id="main_content_wrap" class="outer">
+<section id="main_content" class="inner">
 <article class="post">
   <h1>{{ page.title }}</h1>
-
+  Tags: {{page.tags | array_to_sentence_string}} <br />
+  Personhours: {{page.personhours}}
   <div class="entry">
     {{ content }}
   </div>
@@ -15,3 +18,5 @@ layout: default
 
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
+</section>
+</div>
